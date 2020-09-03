@@ -39,6 +39,15 @@ const options = {
 }
 
 var request = https.request(url, options, function(response) {
+
+if   (response.statusCode === 200){
+  res.send("Susccessfully subscribed!");
+
+} else {
+  res.send("There was an error with signing up, please try again!");
+}
+
+
   response.on("data", function(data){
   console.log(JSON.parse(data));
   })

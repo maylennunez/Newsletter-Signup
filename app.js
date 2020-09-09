@@ -83,7 +83,7 @@ const url = "https://us17.api.mailchimp.com/3.0/lists/1769d48af7";
 
 const options = {
   method: "POST",
-  auth: "may1:ac78a32bdc2ae6da3b2af914578e9bb6-us17"
+  
 }
 
 var request = https.request(url, options, function(response) {
@@ -110,7 +110,7 @@ request.end();
 
 
 
-// API key ac78a32bdc2ae6da3b2af914578e9bb6-us17
+
 >>>>>>> 6819f50f0e6a7e443c578237cbd6e474ed3e65b5
 
 // List ID 1769d48af7
